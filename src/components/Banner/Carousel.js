@@ -35,6 +35,7 @@ const Carousel = () => {
     cursor: "pointer",
     textTransform: "uppercase",
     color: "white",
+    textDecoration:"none",
   };
 
   const profitTextStyle = {
@@ -54,7 +55,7 @@ const Carousel = () => {
     const profitStyle = profit ? greenProfitStyle : redProfitStyle;
 
     return (
-      <Link className={carouselItemStyle} to={`/coins/${coin.id}`} key={coin.id}>
+      <Link style={carouselItemStyle} to={`/coins/${coin.id}`} key={coin.id}>
         <img src={coin?.image} alt={coin.name} height="80" style={{ marginBottom: 10 }} />
         <div>
           {coin?.symbol}&nbsp;

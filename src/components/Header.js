@@ -29,8 +29,8 @@ function Header() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link onClick={() => handleCurrencyChange("INR")} active={currency === "INR"}>
-                INR
+              <Nav.Link onClick={() => handleCurrencyChange("PKR")} active={currency === "PKR"}>
+                PKR
               </Nav.Link>
             </Nav.Item>
           </Nav>
